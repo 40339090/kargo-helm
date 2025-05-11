@@ -2,3 +2,5 @@ image:
   tag: v0.0.1
 
 replicaCount: 1
+featureFlags:
+  FEATURE_CCC: Dev
