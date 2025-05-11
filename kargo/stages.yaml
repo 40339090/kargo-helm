@@ -9,7 +9,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: helm-chart-deployment
     sources:
       direct: true
   - origin:
@@ -40,7 +40,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: helm-chart-deployment
     sources:
       stages:
         - dev
@@ -73,7 +73,7 @@ spec:
   requestedFreight:
   - origin:
       kind: Warehouse
-      name: guestbook
+      name: helm-chart-deployment
     sources:
       stages:
         - staging

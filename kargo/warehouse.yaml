@@ -1,7 +1,7 @@
 apiVersion: kargo.akuity.io/v1alpha1
 kind: Warehouse
 metadata:
-  name: guestbook
+  name: helm-chart-deployment
   namespace: kargo-helm
 spec:
   subscriptions:
