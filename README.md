@@ -23,7 +23,7 @@ This is a GitOps repository of a Kargo Helm example for getting started.
    username:
 
    ```shell
-   ./personalize.sh <yourgithubusername>
+   ./personalize.sh 40339090
    ```
 3. `git commit` the personalized changes:
 
@@ -41,11 +41,11 @@ This is a GitOps repository of a Kargo Helm example for getting started.
 
    docker buildx imagetools create \
      ghcr.io/akuity/guestbook:latest \
-     -t ghcr.io/<yourgithubusername>/guestbook:v0.0.1
+     -t ghcr.io/40339090/guestbook:v0.0.1
    ```
 
    You will now have a `guestbook` container image repository. e.g.:
-   https://github.com/yourgithubusername/guestbook/pkgs/container/guestbook
+   https://github.com/40339090/guestbook/pkgs/container/guestbook
 
 5. Change guestbook container image repository to public.
 
@@ -81,8 +81,8 @@ This is a GitOps repository of a Kargo Helm example for getting started.
    kargo create credentials github-creds \
      --project kargo-helm \
      --git \
-     --username <yourgithubusername> \
-     --repo-url https://github.com/<yourgithubusername>/kargo-helm.git
+     --username 40339090 \
+     --repo-url https://github.com/40339090/kargo-helm.git
    ```
 
    As part of the promotion process, Kargo requires privileges to commit changes
@@ -109,7 +109,7 @@ To simulate a release, simply retag an image with a newer semantic version. e.g.
 ```shell
 docker buildx imagetools create \
   ghcr.io/akuity/guestbook:latest \
-  -t ghcr.io/<yourgithubusername>/guestbook:v0.0.2
+  -t ghcr.io/40339090/guestbook:v0.0.2
 ```
 
 Then refresh the Warehouse in the UI to detect the new Freight.
