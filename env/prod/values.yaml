@@ -2,3 +2,5 @@ image:
   tag: v0.0.1
 
 replicaCount: 2
+featureFlags:
+  FEATURE_CCC: Prod
