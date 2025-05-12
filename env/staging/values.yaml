@@ -4,3 +4,7 @@ image:
 replicaCount: 1
 featureFlags:
   FEATURE_CCC: Staging
+service:
+  type: NodePort
+  port: 3000
+  NodePort: 30082
