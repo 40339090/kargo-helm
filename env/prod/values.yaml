@@ -4,3 +4,7 @@ image:
 replicaCount: 2
 featureFlags:
   FEATURE_CCC: Prod
+service:
+  type: NodePort
+  port: 3000
+  NodePort: 30083
