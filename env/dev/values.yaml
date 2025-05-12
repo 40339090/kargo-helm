@@ -3,4 +3,5 @@ image:
 
 replicaCount: 1
 service:
+  port: 3000
   type: NodePort
