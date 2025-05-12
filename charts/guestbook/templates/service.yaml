@@ -8,6 +8,7 @@ spec:
   type: {{ .Values.service.type }}
   ports:
     - targetPort: http
+      port: 3000
       nodePort: {{ .Values.service.nodePort }}
   selector:
     {{- include "guestbook.selectorLabels" . | nindent 4 }}
